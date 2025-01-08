@@ -1,0 +1,36 @@
+Python Execution Process
+Source Code to Bytecode:
+
+Python source code (.py files) is converted into an intermediate form called bytecode (.pyc files) by the Python compiler.
+This bytecode is a low-level, platform-independent representation of your code.
+Bytecode to Machine Code:
+
+The Python Virtual Machine (PVM) executes the bytecode.
+PVM interprets the bytecode line by line and converts it into machine code for execution.
+Python Virtual Machine (PVM):
+
+It is a part of the Python runtime environment.
+Acts as an interpreter to execute bytecode, handling memory management, error handling, etc.
+
+
+Why Python is Called an Interpreted Language
+
+Python doesn't directly convert code into machine code like compiled languages (e.g., C++).
+Instead, PVM interprets the bytecode at runtime, making it an interpreted language.
+
+
+mutable 
+Mutable Objects
+Definition: Objects whose content or state can be modified after creation.
+
+-- List Set Dictionary Array
+
+
+immuatble 
+Definition: Objects whose content or state cannot be modified after creation.
+-- Integres float boolean string 
+
+name = "ansh"  # "ansh" is stored in memory, and `name` refers to it.
+print(name)    # Output: "ansh"
+
+name = "mehtra"  # A new string "mehtra" is created in memory, and `name` now refers to this new string.
