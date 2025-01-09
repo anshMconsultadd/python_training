@@ -21,6 +21,7 @@ y = list(thistuple)
 y.append("orange")
 thistuple = tuple(y)
 
+ # When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
 fruits = ("apple", "banana", "cherry")
 
 (green, yellow, red) = fruits
