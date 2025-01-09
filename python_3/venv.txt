@@ -1,0 +1,44 @@
+How to Create and Use a Virtual Environment
+Step 1: Install venv (Already Included in Python 3.3+)
+If you're using Python 3.3 or later, the venv module is built-in.
+For earlier versions, you can use virtualenv, which is a third-party tool.
+Step 2: Create a Virtual Environment
+Open your terminal or command prompt.
+Navigate to your project directory.
+Run the following command:
+bash
+Copy code
+python -m venv myenv
+myenv is the name of your virtual environment (you can name it anything).
+This creates a folder named myenv in your project directory.
+Step 3: Activate the Virtual Environment
+On Windows:
+bash
+Copy code
+myenv\Scripts\activate
+On macOS/Linux:
+bash
+Copy code
+source myenv/bin/activate
+Once activated, you’ll notice that your terminal prompt changes to include the name of the virtual environment, e.g., (myenv).
+
+Step 4: Install Packages Inside the Virtual Environment
+While the virtual environment is active, you can install packages like this:
+
+bash
+Copy code
+pip install <package_name>
+For example:
+
+bash
+Copy code
+pip install requests
+The installed packages will only be available inside the virtual environment.
+
+Step 5: Deactivate the Virtual Environment
+To exit the virtual environment, run:
+
+bash
+Copy code
+deactivate
+This returns you to the global Python environment.
