@@ -29,21 +29,3 @@ print(consultadd_unoffcial)
 newlist = [x for x in range(10) if x < 5]
 print(newlist)
 
-
-def greet(*args):
-    for name in args:
-        print(f"Hello, {name}!")
-
-greet("Ansh", "Divyansh", "Ayush")  
-# Output:
-# Hello, Ansh!
-# Hello, Divyansh!
-# Hello, Ayush!
-
-# keywords argyumensts kwargs
-
-def intro(**kwargs):
-    for key,value in kwargs.items():
-        print(f"{key}:{value}")
-
-intro(name="ansh",age=21,intrests="storytelling")
