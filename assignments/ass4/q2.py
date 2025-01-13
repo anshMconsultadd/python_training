@@ -26,5 +26,6 @@ def main():
     for candidate, count in votes.items():
         print(f"{candidate}: {count} votes")
 
+
 if __name__ == "__main__":
     main()  

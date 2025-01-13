@@ -1,22 +1,48 @@
-# Create a class hierarchy for employees, with a base class and
-# subclasses for full-time, part-time, and contractor employees.
-# Include shared attributes like name, ID, and salary calculation in
-# the base class. Each subclass should calculate the salary based
-# on its type (full-time, part-time, contractor). Apply tax deductions
-# (e.g., 10%) and Provident Fund (PF) deductions (e.g., 12%) for
-# full-time and part-time employees. For contractors, apply only the
-# tax deduction and no PF. The final salary after deductions should
-# be returned for each employee type.
+
 
 class Employee:
-   name=""
-   id=0
-   salary=0
-    
+   
    def __init__(self, name, id, salary):
        self.name = name
        self.id = id
        self.salary = salary
 
+
+
+class fulltime(Employee):
+    def __init_(self,name,id,salary):
+        super().__init__(name, id, salary)
     def calculate_salary(self):
-        return self.salary
+        salary = self.salary
+        tax = 0.1 * salary
+        pf = 0.12 *salary
+        salary = salary - tax - pf
+        return salary
+    
+class parttime(Employee):    
+   def __init_(self,name,id,salary):
+        super().__init__(name, id, salary)
+        def calculate_salary(self):
+            salary = self.salary
+            tax = 0.1 * salary
+            pf = 0.12 *salary
+            salary = salary - tax - pf
+            return salary
+    
+class contractor(Employee):
+    def __init__(self, name, id, salary):
+        super().__init__(name, id, salary)
+    def calculate_salary(self): 
+        salary = self.salary
+        tax = 0.1 * salary
+        salary = salary - tax
+        return salary
+
+
+ansh=fulltime("Ansh", 1, 1000)
+ayush=parttime("Ayush", 2, 1000)
+gautam=contractor("Gautam", 3, 1000)
+
+print(ansh.calculate_salary())
+print(gautam.calculate_salary())
+
